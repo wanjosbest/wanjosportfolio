@@ -48,7 +48,7 @@ https://templatemo.com/tm-578-first-portfolio
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">First</a>
+                <a href="index.html" class="navbar-brand mx-auto mx-lg-0">WanjosBest</a>
 
                 <div class="d-flex align-items-center d-lg-none">
                     <i class="navbar-icon bi-telephone-plus me-3"></i>
@@ -100,7 +100,7 @@ https://templatemo.com/tm-578-first-portfolio
                         <div class="col-lg-7 col-12">
                             <div class="hero-text">
                                 <div class="hero-title-wrap d-flex align-items-center mb-4">
-                                    <img src="/static/images/wanjos.jpg" class="avatar-image avatar-image-large img-fluid" alt="">
+                                    <img src="/static/images/wanjos.png" class="avatar-image avatar-image-large img-fluid" alt="">
 
                                     <h1 class="hero-title ms-3 mb-0">Hello friend!</h1>
                                 </div>
@@ -136,14 +136,15 @@ https://templatemo.com/tm-578-first-portfolio
                                 <div class="section-title-wrap d-flex justify-content-end align-items-center mb-4">
                                     <h2 class="text-white me-4 mb-0">My Story</h2>
 
-                                    <img src="/static/images/happy-bearded-young-man.jpg" class="avatar-image img-fluid" alt="">
+                                    <img src="/static/images/one.jpg" class="avatar-image img-fluid" alt="">
                                 </div>
 
-                                <h3 class="pt-2 mb-3">a little bit about Joshua</h3>
+                                <h3 class="pt-2 mb-3">a little bit about Wanjos</h3>
 
-                                <p>This one-page HTML portfolio is provided by <a href="https://templatemo.com" target="_blank">TemplateMo</a>. This layout is based on Bootstrap v5.1.3 CSS and JS libraries. Image credits go to <a href="https://unsplash.com" target="_blank">Unsplash</a> and <a href="https://freepik.com" target="_blank">FreePik</a> for images used in this page.</p>
+                                <p>As a dedicated and versatile backend developer, I specialize in creating robust, scalable, and efficient web applications using modern tools and frameworks. My core expertise lies in Django and the Django Rest Framework (DRF), which I leverage to develop secure RESTful APIs and powerful backend systems tailored to meet diverse client needs. With a strong foundation in Python, I deliver code that is clean, efficient, and easy to maintain.</p>
 
-                                <p>You are allowed to use this template for your websites. You are not allowed to redistribute the template ZIP file on any other website. Please <a href="https://templatemo.com/contact" target="_blank">contact us</a> for more info.</p>
+                                <p>Beyond backend development, I am skilled in frontend technologies, including HTML, CSS, and JavaScript, enabling me to craft seamless and visually appealing user interfaces. This blend of backend and frontend knowledge allows me to bridge the gap between design and functionality, ensuring a cohesive experience for end users. Whether it’s creating complex database-driven applications or integrating third-party APIs, I bring a full-stack approach to problem-solving.</p>
+                                <p>In addition to coding from scratch, I have hands-on experience with WordPress, which makes me proficient in designing and customizing dynamic websites. I can work on themes, plugins, and integrations to create tailored WordPress solutions for businesses, blogs, and e-commerce platforms. My familiarity with both traditional CMS platforms and custom-built solutions gives me the flexibility to work on a variety of projects.</p>
                             </div>
                         </div>
 
@@ -271,7 +272,7 @@ https://templatemo.com/tm-578-first-portfolio
                                             <h3 class="mb-0">Websites</h3>
 
                                             <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$2,400</p>
+                                                <p class="services-price-text mb-0">$500+</p>
                                                 <div class="services-price-overlay"></div>
                                             </div>
                                         </div>
@@ -292,7 +293,7 @@ https://templatemo.com/tm-578-first-portfolio
                                             <h3 class="mb-0"> Python Django Consulting</h3>
 
                                             <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$1,200</p>
+                                                <p class="services-price-text mb-0">$300+</p>
                                                 <div class="services-price-overlay"></div>
                                             </div>
                                         </div>
@@ -313,7 +314,7 @@ https://templatemo.com/tm-578-first-portfolio
                                             <h3 class="mb-0">Ecommerce</h3>
 
                                             <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$3,600</p>
+                                                <p class="services-price-text mb-0">$1500+</p>
                                                 <div class="services-price-overlay"></div>
                                             </div>
                                         </div>
@@ -334,7 +335,7 @@ https://templatemo.com/tm-578-first-portfolio
                                             <h3 class="mb-0">SEO</h3>
 
                                             <div class="services-price-wrap ms-auto">
-                                                <p class="services-price-text mb-0">$1,450</p>
+                                                <p class="services-price-text mb-0">$1000 </p>
                                                 <div class="services-price-overlay"></div>
                                             </div>
                                         </div>
@@ -486,9 +487,11 @@ https://templatemo.com/tm-578-first-portfolio
                                     </p>
                                 </div>
                             </div>
-
+                            {% for message in messages %}
+                            {{message}}
+                            {% endfor %}
                             <div class="col-lg-6 col-12 mt-5 mt-lg-0">
-                                <form action="#" method="post" class="custom-form contact-form" role="form">
+                                <form action="" method="POST" class="custom-form contact-form" role="form">
                                     {% csrf_token %}
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-12">
@@ -506,51 +509,7 @@ https://templatemo.com/tm-578-first-portfolio
                                                 <label for="floatingInput">Email address</label>
                                             </div>
                                         </div>
-                                        
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline">
-                                                <input  type="radio" class="form-check-input" id="inlineCheckbox1" value="4" name = "service">
-
-                                                <label class="form-check-label" for="inlineCheckbox1">
-                                                    <i class="bi-globe form-check-icon"></i>
-                                                    <span class="form-check-label-text">Websites</span>
-                                                </label>
-                                          </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline">
-                                                <input  type="radio" class="form-check-input" id="inlineCheckbox2" value="3" name="service">
-
-                                                <label class="form-check-label" for="inlineCheckbox2">
-                                                    <i class="bi-lightbulb form-check-icon"></i>
-                                                    <span class="form-check-label-text">Python Django Consultin</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline">
-                                                <input  type="radio" class="form-check-input" id="inlineCheckbox3" value="2" name="service">
-
-                                                <label class="form-check-label" for="inlineCheckbox3">
-                                                    <i class="bi-phone form-check-icon"></i>
-                                                    <span class="form-check-label-text">Ecommerce</span>
-                                                </label>
-                                            </div>
-                                        </div>
-
-                                        <div class="col-lg-3 col-md-6 col-6">
-                                            <div class="form-check form-check-inline me-0">
-                                                <input type="radio" class="form-check-input" id="inlineCheckbox4" value="1" name="service">
-
-                                                <label class="form-check-label" for="inlineCheckbox4">
-                                                    <i class="bi-google form-check-icon"></i>
-                                                    <span class="form-check-label-text">SEO</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                       <br> <br>
+                                    
                                         <div class="col-lg-12 col-12">
                                             <div class="form-floating">
                                                 <textarea class="form-control" id="message" name="message" placeholder="Tell me about the project"></textarea>
@@ -581,9 +540,9 @@ https://templatemo.com/tm-578-first-portfolio
                     <div class="col-lg-12 col-12">
                         <div class="copyright-text-wrap">
                             <p class="mb-0">
-                                <span class="copyright-text">Copyright © 2024 <a href="#">Wanjos </a> Company. All rights reserved.</span>
+                                <span class="copyright-text">Copyright © 2025 <a href="#">WanjosBest </a> Company. All rights reserved.</span>
                                 Design: 
-                                <a rel="sponsored" href="https://wanjos.com" target="_blank">Wanjos</a>
+                                <a rel="sponsored" href="" target="_blank">Wanjos</a>
                             </p>
                         </div>
                     </div>
